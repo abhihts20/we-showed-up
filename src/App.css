@@ -1,38 +1,105 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:ital@1&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Mulish", sans-serif;
+}
+
+.navbar {
+  background-color: #fff !important;
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+.navbar-brand {
+  font-size: 1.5rem !important;
+
+}
+
+.navbar a {
+  font-size: 1.2rem;
+  text-transform: capitalize;
+}
+
+
+.menu-active {
+  font-weight: bold;
+  background-color: #c6f4ff ;
+  opacity: 0.8;
+  border-radius: 10px;
   text-align: center;
+  width: 120px;
+  transition: 0.7s ease-in-out;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar a:hover {
+
+  color: #222328;
+  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media (max-width: 991px) {
+  .navbar-brand {
+    font-size: 1.5rem !important;
+  }
+
+  .menu-active {
+    font-weight: bold;
+    border-bottom: none;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.btn-get-started {
+  border-radius: 30px !important;
+  width: 30%;
+}
+
+.brand-name {
+  color: #3498db;
+}
+
+.animated {
+  animation: MoveUpDown 2s linear infinite;
+  position: relative;
+  left: 0;
+  bottom: 0;
+}
+
+@keyframes MoveUpDown {
+  0%,
+  100% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 10px;
+  }
+}
+
+.center-content {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+#banner {
+  padding-top: 5%;
+  padding-bottom: 4%;
+  background-color: #c6f4ff;
+  height: 100%;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  border-radius: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.promo-title {
+  font-size: 40px;
+  font-weight: 600;
+  margin-top: 100px;
+  text-shadow: black;
 }
